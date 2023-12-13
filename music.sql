@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS track (
 CREATE TABLE IF NOT EXISTS collection (
 	collection_id SERIAL PRIMARY KEY,
 	name VARCHAR(40) unique NOT NULL,
-	release INTEGER check(release>1900),
+	release INTEGER check(release>1900)
 );
 
 CREATE TABLE IF NOT EXISTS collection_track (
